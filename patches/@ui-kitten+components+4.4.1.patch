@@ -1,0 +1,21 @@
+diff --git a/node_modules/@ui-kitten/components/ui/select/select.component.js b/node_modules/@ui-kitten/components/ui/select/select.component.js
+index 947ef7a..8733e3c 100644
+--- a/node_modules/@ui-kitten/components/ui/select/select.component.js
++++ b/node_modules/@ui-kitten/components/ui/select/select.component.js
+@@ -213,7 +213,7 @@ class SelectComponent extends react_1.default.Component {
+             });
+         };
+         this.getComponentStyle = (source) => {
+-            const { backgroundColor, borderColor, borderWidth, minHeight, paddingHorizontal, paddingVertical, borderRadius, } = source;
++            const { backgroundColor, borderColor, borderWidth, minHeight, paddingHorizontal, paddingVertical, borderRadius, ...rest } = source;
+             const iconStyles = services_1.allWithPrefix(source, 'icon');
+             const textStyles = services_1.allWithPrefix(source, 'text');
+             const placeholderStyles = services_1.allWithPrefix(source, 'placeholder');
+@@ -228,6 +228,7 @@ class SelectComponent extends react_1.default.Component {
+                     paddingHorizontal: paddingHorizontal,
+                     paddingVertical: paddingVertical,
+                     borderRadius: borderRadius,
++                    ...rest
+                 },
+                 icon: {
+                     height: iconStyles.iconHeight,

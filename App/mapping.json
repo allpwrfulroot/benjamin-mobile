@@ -1,0 +1,211 @@
+{
+  "strict": {
+    "text-font-family": "proxima-regular",
+    "text-font-family-med": "proxima-medium",
+    "border-radius": 0
+  },
+  "components": {
+    "BottomNavigationTab": {
+      "appearances": {
+        "default": {
+          "mapping": {
+            "iconTintColor": "text-basic-color",
+            "textColor": "text-basic-color"
+          }
+        }
+      }
+    },
+    "BottomNavigation": {
+      "appearances": {
+        "default": {
+          "mapping": {
+            "minHeight": 72,
+            "paddingVertical": 4,
+            "backgroundColor": "background-basic-color-3",
+            "indicatorHeight": 2,
+            "indicatorBackgroundColor": "color-primary-default"
+          }
+        }
+      }
+    },
+    "Button": {
+      "meta": {},
+      "appearances": {
+        "outline": {
+          "mapping": {},
+          "variantGroups": {
+            "status": {
+              "primary": {
+                "backgroundColor": "transparent",
+                "textColor": "color-basic-800"
+              }
+            },
+            "size": {
+              "tiny": {
+                "borderRadius": 30,
+                "textFontFamily": "proxima-medium"
+              },
+              "small": {
+                "borderRadius": 30,
+                "textFontFamily": "proxima-medium"
+              },
+              "medium": {
+                "borderRadius": 30,
+                "textFontFamily": "proxima-medium"
+              },
+              "large": {
+                "borderRadius": 30,
+                "textFontFamily": "proxima-medium"
+              },
+              "giant": {
+                "borderRadius": 30,
+                "textFontFamily": "proxima-medium"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Input": {
+      "meta": {
+        "scope": "all",
+        "parameters": {
+          "borderBottomWidth": {
+            "type": "number"
+          },
+          "borderBottomColor": {
+            "type": "string"
+          },
+          "textFontFamily": {
+            "type": "string"
+          }
+        }
+      },
+      "appearances": {
+        "default": {
+          "mapping": {
+            "labelFontFamily": "proxima-medium",
+            "paddingHorizontal": 0,
+            "textMarginHorizontal": 0
+          },
+          "variantGroups": {
+            "status": {
+              "basic": {
+                "labelColor": "text-basic-color",
+                "labelFontFamily": "proxima-medium"
+              },
+              "primary": {
+                "labelColor": "text-basic-color",
+                "labelFontFamily": "proxima-medium"
+              },
+              "success": {
+                "labelColor": "text-basic-color"
+              },
+              "info": {
+                "labelColor": "text-basic-color"
+              },
+              "warning": {
+                "labelColor": "text-basic-color"
+              },
+              "danger": {
+                "labelColor": "text-basic-color"
+              }
+            },
+            "size": {
+              "small": {
+                "borderWidth": 0,
+                "borderBottomWidth": 1,
+                "borderBottomColor": "color-basic-800",
+                "textFontFamily": "proxima-light"
+              },
+              "medium": {
+                "borderWidth": 0,
+                "borderBottomWidth": 1,
+                "borderBottomColor": "color-basic-800",
+                "textFontFamily": "proxima-light"
+              },
+              "large": {
+                "borderWidth": 0,
+                "borderBottomWidth": 1,
+                "borderBottomColor": "color-basic-800",
+                "textFontFamily": "proxima-light"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Select": {
+      "meta": {
+        "scope": "all",
+        "parameters": {
+          "borderColor": {
+            "type": "string"
+          },
+          "borderWidth": {
+            "type": "number"
+          },
+          "borderBottomWidth": {
+            "type": "number"
+          },
+          "borderBottomColor": {
+            "type": "string"
+          }
+        }
+      },
+      "appearances": {
+        "default": {
+          "mapping": {
+            "iconMarginHorizontal": 0,
+            "labelFontFamily": "proxima-regular",
+            "paddingHorizontal": 0,
+            "placeholderMarginHorizontal": 0,
+            "textFontFamily": "proxima-light",
+            "textMarginHorizontal": 0
+          },
+          "variantGroups": {
+            "status": {
+              "basic": {
+                "labelColor": "color-basic-800"
+              },
+              "primary": {
+                "labelColor": "color-basic-800"
+              },
+              "success": {
+                "labelColor": "color-basic-800"
+              },
+              "info": {
+                "labelColor": "text-basic-color"
+              },
+              "warning": {
+                "labelColor": "text-basic-color"
+              },
+              "danger": {
+                "labelColor": "text-basic-color"
+              },
+              "control": {
+                "labelColor": "color-basic-800"
+              }
+            },
+            "size": {
+              "small": {
+                "borderWidth": 0,
+                "placeholderFontFamily": "proxima-light"
+              },
+              "medium": {
+                "borderWidth": 0,
+                "borderBottomWidth": 1,
+                "borderBottomColor": "color-basic-800",
+                "placeholderFontFamily": "proxima-light"
+              },
+              "large": {
+                "borderWidth": 0,
+                "placeholderFontFamily": "proxima-light"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
